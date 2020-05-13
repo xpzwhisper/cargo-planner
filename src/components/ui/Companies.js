@@ -1,28 +1,26 @@
-import React from 'react';
+import React from "react";
+import useFetch from "../../utils/hooks";
+//import displayData from "./DisplayData.js";
 
 function Companies() {
-    return (
-    <div class="six wide column">
-        <div class="ui vertical fluid tabular menu">
-          <p class="ui active green button item">
-            Bio
-          </p>
-          <p class="ui button item">
-            Pics
-          </p>
-          <p class="ui button item">
-            Companies
-          </p>
-          <p class="ui button item">
-            Links
-          </p>
-          <p class="ui button item">
-            Something
-          </p>
-        </div>
-    </div>      
-    );
+  const url = "local_shipments.json";
+  const companies = useFetch(url, { isLoading: true, data: null });
+  console.log(companies.data);
+  if (!companies.data || companies.isLoading) {
+    return "";
   }
-  
-  export default Companies;
-  
+  return (
+    <div className="six wide column">
+      <div className="ui vertical fluid tabular menu">
+        {companies.data.map((company, index) => (
+          <p key={index} className="ui button item">
+            {company.name}
+          </p>
+        ))}
+        <p className="ui active green button item">Something</p>
+      </div>
+    </div>
+  );
+}
+
+export default Companies;

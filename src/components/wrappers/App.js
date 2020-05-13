@@ -1,20 +1,18 @@
-import React from 'react';
-import 'semantic-ui-css/semantic.min.css'
+import React from "react";
+import "semantic-ui-css/semantic.min.css";
 //import logo from './logo.svg';
-import '../../gfx/styles/App.css';
-import Companies from '../ui/Companies.js';
-import MainContent from '../ui/MainContent.js';
+import "../../gfx/styles/App.css";
+import Companies from "../ui/Companies.js";
+import MainContent from "../ui/MainContent.js";
 
 function App() {
   return (
     <div className="App">
-        <div class="ui grid">
-            <Companies/>
-            <MainContent/>
-        </div>
-        
+      <div className="ui grid">
+        <Companies />
+        <MainContent />
+      </div>
     </div>
-    
   );
 }
 

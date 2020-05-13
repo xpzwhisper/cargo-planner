@@ -1,13 +1,12 @@
-import React from 'react';
-
+import React from "react";
+/**
+ * 
+ */
 function MainContent() {
-    return (
-        <div class="ten wide stretched column">
-            <div class="ui segment">
-               Yep Yep eXciting Stuff!
-            </div>
-      </div>
-    );
+  return (
+    <div className="ten wide stretched column">
+      <div className="ui segment">some text</div>
+    </div>
+  );
 }
 export default MainContent;
-  
