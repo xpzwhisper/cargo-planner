@@ -7,13 +7,12 @@ function useFetch(url, defaultResponse) {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      console.log(data);
       setData({
         isLoading: false,
         data,
       });
     } catch (e) {
-      console.log(e);
+      return false;
     }
   }
 

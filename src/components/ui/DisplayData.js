@@ -1,13 +1,20 @@
-import React from "react";
-
-function displayData(props) {
-  /*
+//import React from "react";
+//import MainContent from "./MainContent";
+/*
 !no nii soon on midafi
  ? kas sa saad aru?
 
  TODO see peaks korda tegema
 */
 
-  return <h1>test</h1>;
+/* 
+
+function displayData() {
+
+  const text = function name(params) {
+    return;
+  };
+
 }
 export default displayData;
+ */
